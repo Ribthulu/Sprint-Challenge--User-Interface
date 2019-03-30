@@ -1,3 +1,4 @@
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -52,7 +53,7 @@ table {
 
 * {
     box-sizing: border-box;
-    box-shadow: 0 0 12px -4px red;
+    /* box-shadow: 0 0 12px -4px red; */
 }
 
 html, body, a {
@@ -60,22 +61,24 @@ html, body, a {
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: black;
+    font-size: 20px;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 30px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+    font-size: 20px;
 }
 
-.container {
+/* .container {
     width: 800px;
     margin: 0 auto;
-}
+} */
 
 .top-content {
     display: flex;
@@ -109,8 +112,7 @@ p {
 
 .middle-content .boxes .box {
     width: 12.5%;
-    height: 100px;
-    background: black;
+    height: 200px;
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -153,13 +155,13 @@ footer nav a {
 
 /* start of code for assignment - header and first image */
 
-header, .HighwayImage{
+header, .HighwayImage, .bottom-content, footer{
   width: 80%;
   margin-top: 25px;
   margin: 0 auto;
 }
 
-.fb1 {
+.nav1 {
   display: flex;
   width: 100%;
   margin: 50px 0;
@@ -179,9 +181,85 @@ header nav a:last-child{
   align-items: baseline
 }
 
-/* the future and the past */
-.top-content{
+/* the future, the past, and the boxes */
+.middle-content, .bottom-content{
+  padding: 50px 0;
+}
+
+.top-content {
+  padding-bottom: 50px;
+}
+
+
+.top-content, .middle-content{
   width: 80%;
   margin-top: 25px;
   margin: 0 auto;
+}
+
+.box1{
+  background-color: teal;
+}
+
+.box2{
+  background-color: gold;
+}
+
+.box3{
+  background-color: cadetblue;
+}
+
+.box4{
+  background-color: coral;
+}
+
+.box5{
+  background-color: crimson;
+}
+
+.box6{
+  background-color: forestgreen;
+}
+
+.box7{
+  background-color: darkorchid;
+}
+
+.box8{
+  background-color: hotpink;
+}
+
+.box9{
+  background-color: indigo;
+}
+
+.box10{
+  background-color: dodgerblue;
+}
+
+/* thats no moon section */
+
+.text-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: baseline
+}
+
+/* footer section */
+
+.fb1 {
+  display: flex;
+  width: 100%;
+  margin: 50px 0;
+  justify-content: space-between;
+  align-items: baseline
+}
+
+.nav2 {
+  display: flex;
+  width: 60%;
+  margin: 50px 0;
+  justify-content: space-between;
+  align-items: baseline
 }
