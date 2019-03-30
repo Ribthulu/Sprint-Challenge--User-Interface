@@ -1,0 +1,11 @@
+Self-Study Questions and Answers
+1.	If you were to describe semantic HTML to the next cohort of students, what would you say?
+-	It gives our html code meaning, which is crucial when it comes to search engine optimization, collaboration with other programmers (also making it easier on ourselves to understanding old code), and screen readers.
+2.	Name two big differences between display: block; and display: inline;.
+-	Display: block takes up the whole width of wherever it is placed in the code, unless you edit the width. Even if you shorten the width, nothing can be added on the same line and it introduces a page break. Display: inline takes up only as much space as it needs to and you cannot alter its width. This display method also allows other elements to be placed on the same line and does not include a line break.
+3.	What are the 4 areas of the box model?
+-	Content, padding, border, and margin.
+4.	While using flexbox, what axis does the following property work on: align-items: center?
+-	Cross-axis
+5.	Explain why git is valuable to a team of developers.
+-	It tracks and monitors the changes we make to our projects, and can interact with repositories like Github to submit and store these changes between developers.
