@@ -1,7 +1,10 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
+
+
+/* prewritten code / reset */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -12,8 +15,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +27,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -49,26 +52,26 @@ table {
 
 * {
     box-sizing: border-box;
+    /* box-shadow: 0 0 12px -4px red; */
 }
 
-html, body {
+html, body, a {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 30px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
-}
-
-.container {
-    width: 800px;
-    margin: 0 auto;
+    font-size: 20px;
 }
 
 .top-content {
@@ -82,7 +85,7 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
 .middle-content {
@@ -103,8 +106,7 @@ p {
 
 .middle-content .boxes .box {
     width: 12.5%;
-    height: 100px;
-    background: black;
+    height: 200px;
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -131,16 +133,164 @@ footer {
     background: black;
 }
 
-footer nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
-}
-
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* start of code for assignment - header and first image */
+
+header, .HighwayImage, .AboutPageImage, .bottom-content, footer{
+  width: 80%;
+  margin-top: 25px;
+  margin: 0 auto;
+}
+
+.nav1 {
+  display: flex;
+  width: 100%;
+  margin: 50px 0;
+  justify-content: space-between;
+  align-items: baseline
+}
+
+header nav a:last-child{
+  margin-right: 100px;
+}
+
+.HighwayImage img, .AboutPageImage img {
+  display: flex;
+  width: 100%;
+  margin: 50px 0;
+  justify-content: space-evenly;
+  align-items: baseline
+}
+
+/* the future, the past, the boxes, and thats no moon sections */
+.middle-content, .bottom-content, .tile-top-content, .tile-bottom-content{
+  padding: 50px 0;
+}
+
+.top-content, .about-content {
+  padding-bottom: 50px;
+}
+
+
+.top-content, .middle-content{
+  width: 80%;
+  margin-top: 25px;
+  margin: 0 auto;
+}
+
+.box1{
+  background-color: teal;
+}
+
+.box2{
+  background-color: gold;
+}
+
+.box3{
+  background-color: cadetblue;
+}
+
+.box4{
+  background-color: coral;
+}
+
+.box5{
+  background-color: crimson;
+}
+
+.box6{
+  background-color: forestgreen;
+}
+
+.box7{
+  background-color: darkorchid;
+}
+
+.box8{
+  background-color: hotpink;
+}
+
+.box9{
+  background-color: indigo;
+}
+
+.box10{
+  background-color: dodgerblue;
+}
+
+.text-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: baseline
+}
+
+/* footer section */
+
+.fb1 {
+  display: flex;
+  width: 100%;
+  margin: 50px 0;
+  justify-content: space-between;
+  align-items: baseline
+}
+
+.nav2 {
+  display: flex;
+  width: 60%;
+  margin: 50px 0 0;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 30px 2%;
+}
+
+/* about section  */
+
+.about-content, .image-container, .image-container2{
+  border-bottom: 1px dashed black;
+}
+
+.about-content, .lwt-content, .tile-top-content, .tile-bottom-content {
+  width: 78%;
+  margin-top: 25px;
+  margin: 0 auto;
+}
+
+/* tiled sections */
+.tile-top-content, .tile-bottom-content{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-between;
+}
+
+.image-container, .image-container2 {
+  align-content: flex-start;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+.image-container2 {
+	margin-left: 100px;
+}
+
+.image-container img, .image-container2 img{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+button{
+	background: white;
+	border: 3px solid black;
+	font-size: 25px;
+	padding: 10px 40px;
+  vertical-align: center;
+	color: black;
+  margin-top: 30px;
+  border-radius: 15px;
 }
